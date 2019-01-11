@@ -35,3 +35,140 @@ Creating API v2 with WebPath:
 [APIv1] KEEPALIVE /api/v1/events
 [APIv1] KEEPALIVE /api/v1/events
 [APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+Got message in APIv2 websocket channel
+[APIv2] BROADCAST /api/v2/websocket
+Got message in APIv1 event stream
+Sending content: {
+  "ID": "nivedqe-9he3-AOvGX1MhMZrmOH4PLNdwISdR28Vnfg=@mailhog.example",
+  "From": {
+    "Relays": null,
+    "Mailbox": "www-data",
+    "Domain": "0b4ad573ed63",
+    "Params": ""
+  },
+  "To": [
+    {
+      "Relays": null,
+      "Mailbox": "mailhog",
+      "Domain": "flywheel.local",
+      "Params": ""
+    }
+  ],
+  "Content": {
+    "Headers": {
+      "Content-Type": [
+        "text/plain; charset=UTF-8"
+      ],
+      "Date": [
+        "Fri, 11 Jan 2019 19:16:17 +0000"
+      ],
+      "From": [
+        "WordPress \u003cwordpress@hellodolly.local\u003e"
+      ],
+      "MIME-Version": [
+        "1.0"
+      ],
+      "Message-ID": [
+        "\u003cc347c1b1195dc888a4ba29a1bfc5fe6b@hellodolly.local\u003e"
+      ],
+      "Received": [
+        "from localhost by mailhog.example (MailHog)\r\n          id nivedqe-9he3-AOvGX1MhMZrmOH4PLNdwISdR28Vnfg=@mailhog.example; Fri, 11 Jan 2019 19:16:18 +0000"
+      ],
+      "Return-Path": [
+        "\u003cwww-data@0b4ad573ed63\u003e"
+      ],
+      "Subject": [
+        "[hello dolly] Your site has updated to WordPress 5.0.3"
+      ],
+      "To": [
+        "rayhanctg4@gmail.com"
+      ],
+      "X-Mailer": [
+        "PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)"
+      ],
+      "X-PHP-Originating-Script": [
+        "1000:class-phpmailer.php"
+      ]
+    },
+    "Body": "Howdy! Your site at http://hellodolly.local has been updated automatically to WordPress 5.0.3.\r\n\r\nNo further action is needed on your part. For more on version 5.0.3, see the About WordPress screen:\r\nhttp://hellodolly.local/wp-admin/about.php\r\n\r\nIf you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.\r\nhttps://wordpress.org/support/\r\n\r\nYou also have some plugins or themes with updates available. Update them now:\r\nhttp://hellodolly.local/wp-admin/\r\n\r\nThe WordPress Team\r\n",
+    "Size": 959,
+    "MIME": null
+  },
+  "Created": "2019-01-11T19:16:18.061089317Z",
+  "MIME": null,
+  "Raw": {
+    "From": "www-data@0b4ad573ed63",
+    "To": [
+      "mailhog@flywheel.local"
+    ],
+    "Data": "To: rayhanctg4@gmail.com\r\nSubject: [hello dolly] Your site has updated to WordPress 5.0.3\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Fri, 11 Jan 2019 19:16:17 +0000\r\nFrom: WordPress \u003cwordpress@hellodolly.local\u003e\r\nMessage-ID: \u003cc347c1b1195dc888a4ba29a1bfc5fe6b@hellodolly.local\u003e\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nHowdy! Your site at http://hellodolly.local has been updated automatically to WordPress 5.0.3.\r\n\r\nNo further action is needed on your part. For more on version 5.0.3, see the About WordPress screen:\r\nhttp://hellodolly.local/wp-admin/about.php\r\n\r\nIf you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.\r\nhttps://wordpress.org/support/\r\n\r\nYou also have some plugins or themes with updates available. Update them now:\r\nhttp://hellodolly.local/wp-admin/\r\n\r\nThe WordPress Team\r\n",
+    "Helo": "localhost"
+  }
+}
+
+[APIv1] BROADCAST /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
+[APIv1] KEEPALIVE /api/v1/events
