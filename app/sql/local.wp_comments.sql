@@ -6,4 +6,5 @@ INSERT INTO `wp_comments` VALUES
 (2,57,"hello","rayhanctg4@gmail.com","","127.0.0.1","2019-01-12 18:08:12","2019-01-12 18:08:12","It\'s a comment.",0,"1","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36","",0,1),
 (3,57,"hello","rayhanctg4@gmail.com","","127.0.0.1","2019-01-12 18:14:30","2019-01-12 18:14:30","Another comment.",0,"1","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36","",0,1),
 (4,57,"Munir","munirchittagong@yahoo.com","","127.0.0.1","2019-01-12 18:24:41","2019-01-12 18:24:41","test comment",0,"0","Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0","",0,0),
-(5,57,"Munir","munirchittagong@yahoo.com","","127.0.0.1","2019-01-12 18:25:20","2019-01-12 18:25:20","test reply",0,"0","Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0","",3,0);
+(5,57,"Munir","munirchittagong@yahoo.com","","127.0.0.1","2019-01-12 18:25:20","2019-01-12 18:25:20","test reply",0,"0","Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0","",3,0),
+(6,47,"Munir","munirchittagong@yahoo.com","","127.0.0.1","2019-01-13 08:41:41","2019-01-13 08:41:41","sdfsdf",0,"0","Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0","",0,0);

@@ -71,3 +71,15 @@ Stack trace:
 #2 /app/public/index.php(17): require('/app/public/wp-...')
 #3 {main}
   thrown in /app/public/wp-content/themes/alpha/single.php on line 56
+[13-Jan-2019 19:11:38 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function is_active_sidebar(), 0 passed in /app/public/wp-content/themes/alpha/footer.php on line 6 and exactly 1 expected in /app/public/wp-includes/widgets.php:867
+Stack trace:
+#0 /app/public/wp-content/themes/alpha/footer.php(6): is_active_sidebar()
+#1 /app/public/wp-includes/template.php(688): require_once('/app/public/wp-...')
+#2 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', true)
+#3 /app/public/wp-includes/general-template.php(76): locate_template(Array, true)
+#4 /app/public/wp-content/themes/alpha/single.php(86): get_footer()
+#5 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#6 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#7 /app/public/index.php(17): require('/app/public/wp-...')
+#8 {main}
+  thrown in /app/public/wp-includes/widgets.php on line 867
