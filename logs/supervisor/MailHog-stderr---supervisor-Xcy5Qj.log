@@ -1,0 +1,133 @@
+2019/01/12 14:23:27 Using in-memory storage
+2019/01/12 14:23:27 [SMTP] Binding to address: 0.0.0.0:1025
+2019/01/12 14:23:27 Serving under http://:1080/
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Starting session
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Received 16 bytes: 'EHLO localhost\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: ESTABLISH] In ESTABLISH state
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Received 35 bytes: 'MAIL FROM:<www-data@0b4ad573ed63>\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@0b4ad573ed63>
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@0b4ad573ed63>'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: MAIL] In MAIL state
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Sent 37 bytes: '250 Sender www-data@0b4ad573ed63 ok\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: RCPT] In RCPT state
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: RCPT] Got RCPT command
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Received 6 bytes: 'DATA\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: RCPT] Processing line: DATA
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: RCPT] In RCPT state
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Received 1024 bytes: 'To: rayhanctg4@gmail.com\r\nSubject: [hello dolly] Please moderate: "Another Post"\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Sat, 12 Jan 2019 18:24:41 +0000\r\nFrom: WordPress <wordpress@hellodolly.local>\r\nMessage-ID: <9d1af267bd34c6fd8c2385d939915d1a@hellodolly.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nA new comment on the post "Another Post" is waiting for your approval\r\nhttp://94e57edc.ngrok.io/another-post/\r\n\r\nAuthor: Munir (IP address: 127.0.0.1, localhost)\r\nEmail: munirchittagong@yahoo.com\r\nURL: \r\nComment: \r\ntest comment\r\n\r\nApprove it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=approve&c=4#wpbody-content\r\nTrash it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=trash&c=4#wpbody-content\r\nSpam it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=spam&c=4#wpbody-content\r\nCurrently 1 comment is waiting for approval. Please visit the moderation panel:\r\nhttp://94e57edc.ngrok.io/wp-'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Received 70 bytes: 'admin/edit-comments.php?comment_status=moderated#wpbody-content\r\n\r\n.\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/01/12 18:24:41 Parsing Content from string: 'To: rayhanctg4@gmail.com
+Subject: [hello dolly] Please moderate: "Another Post"
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Sat, 12 Jan 2019 18:24:41 +0000
+From: WordPress <wordpress@hellodolly.local>
+Message-ID: <9d1af267bd34c6fd8c2385d939915d1a@hellodolly.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+A new comment on the post "Another Post" is waiting for your approval
+http://94e57edc.ngrok.io/another-post/
+
+Author: Munir (IP address: 127.0.0.1, localhost)
+Email: munirchittagong@yahoo.com
+URL: 
+Comment: 
+test comment
+
+Approve it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=approve&c=4#wpbody-content
+Trash it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=trash&c=4#wpbody-content
+Spam it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=spam&c=4#wpbody-content
+Currently 1 comment is waiting for approval. Please visit the moderation panel:
+http://94e57edc.ngrok.io/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Storing message Qo7xuWrdgak53RwF4qUQBil9WHgMkrgC5G6uwKhH644=@mailhog.example
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Sent 80 bytes: '250 Ok: queued as Qo7xuWrdgak53RwF4qUQBil9WHgMkrgC5G6uwKhH644=@mailhog.example\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Received 6 bytes: 'QUIT\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: MAIL] Processing line: QUIT
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Sent 9 bytes: '221 Bye\r\n'
+2019/01/12 18:24:41 [SMTP 127.0.0.1:48382] Session ended
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Starting session
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: INVALID] Started session, switching to ESTABLISH state
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Sent 35 bytes: '220 mailhog.example ESMTP MailHog\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Received 16 bytes: 'EHLO localhost\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: ESTABLISH] Processing line: EHLO localhost
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: ESTABLISH] In state 1, got command 'EHLO', args 'localhost'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: ESTABLISH] In ESTABLISH state
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: ESTABLISH] Got EHLO command, switching to MAIL state
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Sent 21 bytes: '250-Hello localhost\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Sent 16 bytes: '250-PIPELINING\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Sent 16 bytes: '250 AUTH PLAIN\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Received 35 bytes: 'MAIL FROM:<www-data@0b4ad573ed63>\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: MAIL] Processing line: MAIL FROM:<www-data@0b4ad573ed63>
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: MAIL] In state 6, got command 'MAIL', args 'FROM:<www-data@0b4ad573ed63>'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: MAIL] In MAIL state
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: MAIL] Got MAIL command, switching to RCPT state
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Sent 37 bytes: '250 Sender www-data@0b4ad573ed63 ok\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Received 34 bytes: 'RCPT TO:<mailhog@flywheel.local>\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: RCPT] Processing line: RCPT TO:<mailhog@flywheel.local>
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: RCPT] In state 7, got command 'RCPT', args 'TO:<mailhog@flywheel.local>'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: RCPT] In RCPT state
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: RCPT] Got RCPT command
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Sent 41 bytes: '250 Recipient mailhog@flywheel.local ok\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Received 6 bytes: 'DATA\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: RCPT] Processing line: DATA
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: RCPT] In state 7, got command 'DATA', args ''
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: RCPT] In RCPT state
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: RCPT] Got DATA command, switching to DATA state
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Sent 37 bytes: '354 End data with <CR><LF>.<CR><LF>\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Received 1024 bytes: 'To: rayhanctg4@gmail.com\r\nSubject: [hello dolly] Please moderate: "Another Post"\r\nX-PHP-Originating-Script: 1000:class-phpmailer.php\r\nDate: Sat, 12 Jan 2019 18:25:20 +0000\r\nFrom: WordPress <wordpress@hellodolly.local>\r\nMessage-ID: <71c3f8466e9e1bf03327d40f24c4bc5c@hellodolly.local>\r\nX-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nA new comment on the post "Another Post" is waiting for your approval\r\nhttp://94e57edc.ngrok.io/another-post/\r\n\r\nAuthor: Munir (IP address: 127.0.0.1, localhost)\r\nEmail: munirchittagong@yahoo.com\r\nURL: \r\nComment: \r\ntest reply\r\n\r\nApprove it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=approve&c=5#wpbody-content\r\nTrash it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=trash&c=5#wpbody-content\r\nSpam it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=spam&c=5#wpbody-content\r\nCurrently 2 comments are waiting for approval. Please visit the moderation panel:\r\nhttp://94e57edc.ngrok.io/wp-'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Received 70 bytes: 'admin/edit-comments.php?comment_status=moderated#wpbody-content\r\n\r\n.\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: DATA] Got EOF, storing message and switching to MAIL state
+2019/01/12 18:25:20 Parsing Content from string: 'To: rayhanctg4@gmail.com
+Subject: [hello dolly] Please moderate: "Another Post"
+X-PHP-Originating-Script: 1000:class-phpmailer.php
+Date: Sat, 12 Jan 2019 18:25:20 +0000
+From: WordPress <wordpress@hellodolly.local>
+Message-ID: <71c3f8466e9e1bf03327d40f24c4bc5c@hellodolly.local>
+X-Mailer: PHPMailer 5.2.22 (https://github.com/PHPMailer/PHPMailer)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+A new comment on the post "Another Post" is waiting for your approval
+http://94e57edc.ngrok.io/another-post/
+
+Author: Munir (IP address: 127.0.0.1, localhost)
+Email: munirchittagong@yahoo.com
+URL: 
+Comment: 
+test reply
+
+Approve it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=approve&c=5#wpbody-content
+Trash it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=trash&c=5#wpbody-content
+Spam it: http://94e57edc.ngrok.io/wp-admin/comment.php?action=spam&c=5#wpbody-content
+Currently 2 comments are waiting for approval. Please visit the moderation panel:
+http://94e57edc.ngrok.io/wp-admin/edit-comments.php?comment_status=moderated#wpbody-content
+'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Storing message zjgMwJajZWsfcDx4zOplbQow1vKD86jUu20j0X1d5PA=@mailhog.example
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Sent 80 bytes: '250 Ok: queued as zjgMwJajZWsfcDx4zOplbQow1vKD86jUu20j0X1d5PA=@mailhog.example\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Received 6 bytes: 'QUIT\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: MAIL] Processing line: QUIT
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: MAIL] In state 6, got command 'QUIT', args ''
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] [PROTO: MAIL] Got QUIT verb, staying in MAIL state
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Sent 9 bytes: '221 Bye\r\n'
+2019/01/12 18:25:20 [SMTP 127.0.0.1:48450] Session ended

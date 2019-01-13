@@ -45,6 +45,11 @@ h2.post-title {
     font-size: 18px;
 }
 
+.post p img {
+    max-width: 100%;
+    height: auto;
+}
+
 .post .row:nth-child(2) {
     padding-bottom: 50px;
     border-bottom: 1px solid #ccc;
@@ -64,4 +69,27 @@ h2.post-title {
 
 .tags li{
     color: #3D9970;
+}
+
+.post-pagination {
+    margin-bottom: 50px;
+}
+
+.prev.page-numbers,
+.next.page-numbers {
+    background: #dedddd;
+    padding: 5px 15px;
+    border-radius: 50px;
+    color: #000;
+    text-decoration: none;
+}
+
+span.page-numbers.current {
+    font-weight: 700;
+}
+
+.prev.page-numbers:hover, .next.page-numbers:hover {
+    background: #444;
+    color: #fff;
+    text-decoration: none;
 }

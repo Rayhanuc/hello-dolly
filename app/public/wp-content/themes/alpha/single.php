@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,35 +28,36 @@
     <div class="post" <?php post_class();?>><!-- single post start div -->
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="post-title">
-                        <a href="<?php the_permalink();?>"><?php the_title(); ?></a>
+                <div class="col-md-10 offset-md-1">
+                    <h2 class="post-title text-center">
+                        <?php the_title();?>
                     </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <p>
+                    <p class="text-center">
                         <strong><?php the_author(); ?></strong><br/>
                         <?php echo get_the_date();?>
                     </p>
-
-                    <?php echo get_the_tag_list("<ul class=\"list-unstyled\"><li>","</li><li>","</li></ul>")?>
                 </div>
-                <div class="col-md-8">
+            </div>
+            <div class="row">
+                
+                <div class="col-md-10 offset-md-1">
                     <p>
                         <?php
                             if(has_post_thumbnail()) {
                                 the_post_thumbnail("large", array("class"=>"img-fluid"));
                             }
+
+                            the_content();
                         ?>
                     </p>
-
-                    <?php 
-                        the_excerpt();
-                    ?>
                     
                 </div>
+
+                <?php if(comments_open()) : ?>
+                    <div class="col-md-10 offset-md-1">
+                        <?php comments_template();  ?>
+                    </div>
+                <?php endif;?>
             </div>
 
         </div>
