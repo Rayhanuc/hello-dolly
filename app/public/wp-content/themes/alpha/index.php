@@ -33,7 +33,11 @@
                         <?php
                             //for post thumbnail/image
                             if(has_post_thumbnail()) {
+                                //$thumbnail_url = get_the_post_thumbnail_url( null, "large" );
+                                // echo "<a href="'.$thumbnail_url.'" data-featherlight="image">";
+                                echo '<a class="phpup" href="#" data-featherlight="image">';
                                 the_post_thumbnail("large", array("class"=>"img-fluid"));
+                                echo "</a>";
                             }
 
                             /*//for password form

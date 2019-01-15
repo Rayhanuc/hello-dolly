@@ -86,3 +86,5 @@ Stack trace:
 [14-Jan-2019 12:41:33 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /app/public/wp-content/themes/alpha/hero.php on line 20
 [14-Jan-2019 12:41:53 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/alpha/hero.php on line 21
 [14-Jan-2019 12:42:30 UTC] PHP Parse error:  syntax error, unexpected ')' in /app/public/wp-content/themes/alpha/hero.php on line 21
+[14-Jan-2019 15:18:47 UTC] PHP Parse error:  syntax error, unexpected 'array' (T_ARRAY), expecting ',' or ')' in /app/public/wp-content/themes/alpha/functions.php on line 18
+[14-Jan-2019 15:20:06 UTC] PHP Parse error:  syntax error, unexpected 'true' (T_STRING), expecting ',' or ')' in /app/public/wp-content/themes/alpha/functions.php on line 18

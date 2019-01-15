@@ -6,4 +6,5 @@ INSERT INTO `wp_term_taxonomy` VALUES
 (2,2,"nav_menu","",0,6),
 (3,3,"post_tag","",0,2),
 (4,4,"post_tag","",0,2),
-(5,5,"post_tag","",0,1);
+(5,5,"post_tag","",0,1),
+(6,6,"nav_menu","",0,5);

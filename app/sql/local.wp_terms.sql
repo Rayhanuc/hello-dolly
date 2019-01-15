@@ -6,4 +6,5 @@ INSERT INTO `wp_terms` VALUES
 (2,"Main menu","main-menu",0),
 (3,"dhaka","dhaka",0),
 (4,"weather","weather",0),
-(5,"blog","blog",0);
+(5,"blog","blog",0),
+(6,"Social Links Menu","social-links-menu",0);
