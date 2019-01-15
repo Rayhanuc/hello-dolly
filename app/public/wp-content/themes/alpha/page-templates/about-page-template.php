@@ -1,8 +1,13 @@
+<?php
+/*
+Template Name: About Page Template
+*/
+?>
 <?php get_header()?>
 
 <body <?php body_class();?>>
 
-<?php get_template_part("/template-parts/common/hero")?>
+<?php get_template_part("/template-parts/about-page/hero-page");?>
 
 
     <div class="posts"><!-- posts start div -->

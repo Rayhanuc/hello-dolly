@@ -93,3 +93,19 @@ span.page-numbers.current {
     color: #fff;
     text-decoration: none;
 }
+
+.page-header{
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+    padding:170px 0px;
+}
+
+.page-header h1.heading a {
+    color: #fd00de;
+    text-decoration: none;
+}
+
+.page-header h1.heading a:hover {
+    color: #960b40;
+}
