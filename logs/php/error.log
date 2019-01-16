@@ -142,3 +142,114 @@ Stack trace:
 #9 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
 #10 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
 #11 /app/public/index.php(17 in /app/public/wp-content/themes/alpha/functions.php on line 106
+[16-Jan-2019 09:41:34 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:41:34 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:41:34 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:41:34 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:41:42 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:41:42 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:42:04 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:42:04 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:42:04 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:42:04 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:42:10 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:42:10 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:42:11 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:42:11 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:42:11 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:42:11 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:42:11 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:42:11 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:42:25 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:42:25 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:42:33 UTC] PHP Warning:  Use of undefined constant alpha_custom_logo_default - assumed 'alpha_custom_logo_default' (this will throw an Error in a future version of PHP) in /app/public/wp-content/themes/alpha/functions.php on line 23
+[16-Jan-2019 09:42:33 UTC] PHP Warning:  array_intersect_key(): Argument #1 is not an array in /app/public/wp-includes/theme.php on line 2286
+[16-Jan-2019 09:49:13 UTC] PHP Warning:  function_exists() expects exactly 1 parameter, 0 given in /app/public/wp-content/themes/alpha/template-parts/common/hero.php on line 7
+[16-Jan-2019 12:17:51 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function current_theme_support() in /app/public/wp-content/themes/alpha/template-parts/common/hero.php:6
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/alpha/index.php(5): get_template_part('/template-parts...')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/alpha/template-parts/common/hero.php on line 6
+[16-Jan-2019 12:18:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function current_theme_support() in /app/public/wp-content/themes/alpha/template-parts/common/hero.php:6
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/alpha/index.php(5): get_template_part('/template-parts...')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/alpha/template-parts/common/hero.php on line 6
+[16-Jan-2019 12:19:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function current_theme_support() in /app/public/wp-content/themes/alpha/template-parts/common/hero.php:6
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/alpha/index.php(5): get_template_part('/template-parts...')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/alpha/template-parts/common/hero.php on line 6
+[16-Jan-2019 12:19:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function current_theme_support() in /app/public/wp-content/themes/alpha/template-parts/common/hero.php:6
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/alpha/index.php(5): get_template_part('/template-parts...')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/alpha/template-parts/common/hero.php on line 6
+[16-Jan-2019 12:19:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function current_theme_support() in /app/public/wp-content/themes/alpha/template-parts/common/hero.php:6
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/alpha/index.php(5): get_template_part('/template-parts...')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/alpha/template-parts/common/hero.php on line 6
+[16-Jan-2019 12:19:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function current_theme_support() in /app/public/wp-content/themes/alpha/template-parts/common/hero.php:6
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/alpha/index.php(5): get_template_part('/template-parts...')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/alpha/template-parts/common/hero.php on line 6
+[16-Jan-2019 12:22:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function current_theme_support() in /app/public/wp-content/themes/alpha/template-parts/common/hero.php:6
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/alpha/index.php(5): get_template_part('/template-parts...')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/alpha/template-parts/common/hero.php on line 6
+[16-Jan-2019 12:22:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function current_theme_support() in /app/public/wp-content/themes/alpha/template-parts/common/hero.php:6
+Stack trace:
+#0 /app/public/wp-includes/template.php(690): require()
+#1 /app/public/wp-includes/template.php(647): load_template('/app/public/wp-...', false)
+#2 /app/public/wp-includes/general-template.php(155): locate_template(Array, true, false)
+#3 /app/public/wp-content/themes/alpha/index.php(5): get_template_part('/template-parts...')
+#4 /app/public/wp-includes/template-loader.php(74): include('/app/public/wp-...')
+#5 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#6 /app/public/index.php(17): require('/app/public/wp-...')
+#7 {main}
+  thrown in /app/public/wp-content/themes/alpha/template-parts/common/hero.php on line 6
