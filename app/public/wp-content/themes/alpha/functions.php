@@ -14,11 +14,17 @@ function alpha_bootstrapping() {
     $alpha_custom_header_details = array(
         'header-text'           => true,
         'default-text-color'    => '#222',
+        'width'                 => 1200,
+        'height'                => 600,
+        'flex-width'            => true,
+        'flex-height'           => true,
+
     );
     add_theme_support("custom-header", $alpha_custom_header_details);
     $alpha_custom_logo_default = array(
         'height'      => 100,
         'width'       => 100,
+
     );
     add_theme_support("custom-logo", $alpha_custom_logo_default);
     register_nav_menu("topmenu", __("Top Menu", "alpha")); 
