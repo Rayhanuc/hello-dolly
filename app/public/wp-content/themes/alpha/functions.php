@@ -11,7 +11,11 @@ function alpha_bootstrapping() {
     load_theme_textdomain( "alpha" );
     add_theme_support("post-thumbnails");
     add_theme_support("title-tag");
-    add_theme_support("custom-header");
+    $alpha_custom_header_details = array(
+        'header-text'           => true,
+        'default-text-color'    => '#222',
+    );
+    add_theme_support("custom-header", $alpha_custom_header_details);
     register_nav_menu("topmenu", __("Top Menu", "alpha")); 
     register_nav_menu("footermenu", __("Footer Menu", "alpha")); 
 }
@@ -112,6 +116,25 @@ function alpha_about_page_template_banner(){
                         background-position: center;
                         margin-bottom:50px;
                     }
+                    
+                    .header h1.heading a, h3.tagline {
+                        color: #<?php echo get_header_textcolor();?>;
+                        <?php
+                        if (!display_header_text()){
+                            echo "display: none;";
+                        } 
+                        
+                        ?>
+                    }
+
+                    h1.heading {                        
+                        <?php
+                        if (!display_header_text()){
+                            echo "border-bottom: none;";
+                        }                        
+                        ?>
+                    }
+                    
                 </style>
             <?php
         }
