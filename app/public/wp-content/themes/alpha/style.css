@@ -117,3 +117,20 @@ span.page-numbers.current {
 .header-logo img {
     border-radius: 50px;
 }
+
+.error-page {
+    padding: 250px 0;
+}
+
+/* 404 page css start */
+.error-page {
+    color: red;
+}
+
+.error-page h1 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+
+/* 404 page css end */

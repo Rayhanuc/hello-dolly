@@ -27,6 +27,8 @@ function alpha_bootstrapping() {
 
     );
     add_theme_support("custom-logo", $alpha_custom_logo_default);
+
+    add_theme_support("custom-background");
     register_nav_menu("topmenu", __("Top Menu", "alpha")); 
     register_nav_menu("footermenu", __("Footer Menu", "alpha")); 
 }
