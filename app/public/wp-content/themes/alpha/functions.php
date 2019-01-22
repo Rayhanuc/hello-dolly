@@ -158,4 +158,31 @@ function alpha_about_page_template_banner(){
         }
     }
 }
+
+
 add_action("wp_head", "alpha_about_page_template_banner", 11);
+
+
+// body class remove method
+function alpha_body_class($classes){
+    // unset means remove class
+    unset($classes[array_search("custom-background", $classes)]);
+    unset($classes[array_search("single-format-video", $classes)]);
+
+    // add class
+    $classes[] = "bodyclass";
+    return $classes;
+}
+add_filter("body_class", "alpha_body_class");
+
+
+// post class remove method
+function alpha_post_class($classes){
+    //remove post class
+    unset($classes[array_search("format-video", $classes)]);
+
+    // add post class
+    $classes[] = "postclass";
+    return $classes;
+}
+add_filter("post_class", "alpha_post_class");

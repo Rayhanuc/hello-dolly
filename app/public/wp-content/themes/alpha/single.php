@@ -10,7 +10,7 @@ if (!is_active_sidebar("sidebar-1")) {
 
 <?php get_header()?>
 
-<body <?php body_class();?>>
+<body <?php body_class(array("first_class", "second_class", "thirt_class", "fourth_class"));?>>
 
 <?php get_template_part("/template-parts/common/hero")?>
 
@@ -23,7 +23,7 @@ if (!is_active_sidebar("sidebar-1")) {
                         the_post();
                     
                 ?><!-- While loop start for post -->
-                <div <?php post_class();?>><!-- single post start div -->
+                <div <?php post_class(array("first_post_class", "second_post_class", "thirt_post_class", "fourth_post_class"));?>><!-- single post start div -->
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
