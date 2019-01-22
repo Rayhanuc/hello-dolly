@@ -11,6 +11,9 @@ function alpha_bootstrapping() {
     load_theme_textdomain( "alpha" );
     add_theme_support("post-thumbnails");
     add_theme_support("title-tag");
+
+    add_theme_support("post-formats", array("image","quote","video","audio","link","gallery") );
+
     $alpha_custom_header_details = array(
         'header-text'           => true,
         'default-text-color'    => '#222',
@@ -36,12 +39,14 @@ add_action("after_setup_theme", "alpha_bootstrapping");
 
 
 function alpha_assets(){
-    wp_enqueue_style("alpha", get_stylesheet_uri(), null, VERSION);
     wp_enqueue_style("bootstrap", "//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");
     wp_enqueue_style("featherlight", "//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css");
+    // Dashicons enqueue
+    wp_enqueue_style("dashicons");
+    wp_enqueue_style("alpha", get_stylesheet_uri(), null, VERSION);
 
     wp_enqueue_script("featherlight-js","//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js", array("jquery"), "0.0.1", true);
-    //new system enqueue
+    //new js system enqueue
     wp_enqueue_script( "alpha-main", get_theme_file_uri("/assets/js/main.js"), array("jquery", "featherlight-js"), VERSION, true );
 }
 add_action("wp_enqueue_scripts", "alpha_assets");

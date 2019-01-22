@@ -134,3 +134,20 @@ span.page-numbers.current {
 
 
 /* 404 page css end */
+
+/* post type css start */
+.dashicons {
+    color: #ccc;
+    font-size: 100px;
+}
+/* post type css end */
+
+.authorimage img {
+    border-radius: 50px;
+    margin-top: 35px;
+}
+
+.authorsection {
+    border: 1px solid #ababab;
+    padding: 25px;
+}
