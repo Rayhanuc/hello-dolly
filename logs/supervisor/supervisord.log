@@ -952,3 +952,49 @@
 2019-01-22 13:03:07,092 INFO success: MailHog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2019-01-22 13:03:07,182 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
 2019-01-22 13:03:07,183 INFO success: varnish-themes-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-01-22 19:03:59,232 WARN received SIGTERM indicating exit request
+2019-01-22 19:03:59,253 INFO waiting for varnishd, php-fpm, varnish-plugins-watcher, nginx, MailHog, mysql, varnish-themes-watcher to die
+2019-01-22 19:04:00,256 INFO stopped: varnish-themes-watcher (terminated by SIGTERM)
+2019-01-22 19:04:00,322 INFO stopped: mysql (exit status 0)
+2019-01-22 19:04:00,379 INFO stopped: MailHog (terminated by SIGTERM)
+2019-01-22 19:04:00,685 INFO stopped: nginx (exit status 0)
+2019-01-22 19:04:01,022 INFO stopped: varnish-plugins-watcher (terminated by SIGTERM)
+2019-01-22 19:04:01,042 INFO reaped unknown pid 14075
+2019-01-22 19:04:01,506 INFO stopped: php-fpm (exit status 0)
+2019-01-22 19:04:02,651 INFO waiting for varnishd to die
+2019-01-22 19:04:04,011 INFO reaped unknown pid 97
+2019-01-22 19:04:05,493 INFO reaped unknown pid 14079
+2019-01-22 19:04:06,222 INFO stopped: varnishd (exit status 0)
+2019-01-23 15:14:45,188 CRIT Supervisor running as root (no user in config file)
+2019-01-23 15:14:45,230 INFO Included extra file "/etc/supervisor/conf.d/supervisord.conf" during parsing
+2019-01-23 15:14:45,648 INFO RPC interface 'supervisor' initialized
+2019-01-23 15:14:45,673 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2019-01-23 15:14:45,713 INFO supervisord started with pid 1
+2019-01-23 15:14:46,730 INFO spawned: 'varnishd' with pid 50
+2019-01-23 15:14:46,854 INFO spawned: 'php-fpm' with pid 51
+2019-01-23 15:14:46,948 INFO spawned: 'varnish-plugins-watcher' with pid 52
+2019-01-23 15:14:47,001 INFO spawned: 'nginx' with pid 54
+2019-01-23 15:14:47,039 INFO spawned: 'MailHog' with pid 56
+2019-01-23 15:14:47,121 INFO spawned: 'mysql' with pid 57
+2019-01-23 15:14:47,273 INFO spawned: 'varnish-themes-watcher' with pid 58
+2019-01-23 15:14:48,381 INFO success: varnishd entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-01-23 15:14:48,385 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-01-23 15:14:48,387 INFO success: varnish-plugins-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-01-23 15:14:48,389 INFO success: nginx entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-01-23 15:14:48,402 INFO success: MailHog entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-01-23 15:14:48,403 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-01-23 15:14:48,436 INFO success: varnish-themes-watcher entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2019-01-23 19:42:18,629 WARN received SIGTERM indicating exit request
+2019-01-23 19:42:18,830 INFO waiting for varnishd, php-fpm, varnish-plugins-watcher, nginx, MailHog, mysql, varnish-themes-watcher to die
+2019-01-23 19:42:19,834 INFO stopped: varnish-themes-watcher (terminated by SIGTERM)
+2019-01-23 19:42:19,942 INFO stopped: mysql (exit status 0)
+2019-01-23 19:42:19,946 INFO stopped: MailHog (terminated by SIGTERM)
+2019-01-23 19:42:20,588 INFO stopped: nginx (exit status 0)
+2019-01-23 19:42:21,851 INFO stopped: varnish-plugins-watcher (terminated by SIGTERM)
+2019-01-23 19:42:21,853 INFO waiting for varnishd, php-fpm to die
+2019-01-23 19:42:22,140 INFO stopped: php-fpm (exit status 0)
+2019-01-23 19:42:22,326 INFO reaped unknown pid 11093
+2019-01-23 19:42:22,631 INFO reaped unknown pid 11095
+2019-01-23 19:42:25,156 INFO waiting for varnishd to die
+2019-01-23 19:42:25,187 INFO stopped: varnishd (exit status 0)
+2019-01-23 19:42:25,406 INFO reaped unknown pid 115

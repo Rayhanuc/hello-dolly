@@ -343,3 +343,33 @@ Stack trace:
 [22-Jan-2019 13:09:28 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /app/public/wp-content/themes/alpha/functions.php on line 186
 [22-Jan-2019 13:09:28 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /app/public/wp-content/themes/alpha/functions.php on line 186
 [22-Jan-2019 13:09:42 UTC] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /app/public/wp-content/themes/alpha/functions.php on line 186
+[23-Jan-2019 17:38:02 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/alpha/lib/attachments.php on line 15
+[23-Jan-2019 17:38:02 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/alpha/lib/attachments.php on line 15
+[23-Jan-2019 18:26:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function exits() on null in /app/public/wp-content/themes/alpha/single.php:45
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/alpha/single.php on line 45
+[23-Jan-2019 18:27:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function exits() on null in /app/public/wp-content/themes/alpha/single.php:45
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/alpha/single.php on line 45
+[23-Jan-2019 18:28:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function exist() on null in /app/public/wp-content/themes/alpha/single.php:45
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/alpha/single.php on line 45
+[23-Jan-2019 19:02:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Attachments' not found in /app/public/wp-content/themes/alpha/single.php:44
+Stack trace:
+#0 /app/public/wp-includes/template-loader.php(74): include()
+#1 /app/public/wp-blog-header.php(19): require_once('/app/public/wp-...')
+#2 /app/public/index.php(17): require('/app/public/wp-...')
+#3 {main}
+  thrown in /app/public/wp-content/themes/alpha/single.php on line 44

@@ -1,4 +1,11 @@
 <?php
+
+// attachments.php file include
+if ( class_exists( 'Attachments' ) ) {
+    require_once("lib/attachments.php");
+}
+
+
 //FOR DYNAMIC VERSION
 if(site_url() == "http://hellodolly.local"){
     define("VERSION", time());
@@ -43,8 +50,10 @@ function alpha_assets(){
     wp_enqueue_style("featherlight", "//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.css");
     // Dashicons enqueue
     wp_enqueue_style("dashicons");
+    wp_enqueue_style("tns-style", "//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css");
     wp_enqueue_style("alpha", get_stylesheet_uri(), null, VERSION);
 
+    wp_enqueue_script("tns-js","//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js", null, "2.9.1", true);
     wp_enqueue_script("featherlight-js","//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js", array("jquery"), "0.0.1", true);
     //new js system enqueue
     wp_enqueue_script( "alpha-main", get_theme_file_uri("/assets/js/main.js"), array("jquery", "featherlight-js"), VERSION, true );

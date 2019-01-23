@@ -39,5 +39,5 @@ INSERT INTO `wp_usermeta` VALUES
 (37,2,"wp_capabilities","a:1:{s:10:\"subscriber\";b:1;}"),
 (38,2,"wp_user_level","0"),
 (39,2,"dismissed_wp_pointers","wp496_privacy"),
-(40,1,"session_tokens","a:1:{s:64:\"877a55261d249011b51bea0f4d099cc77a8d249460de980d4ee4e141dbde1186\";a:4:{s:10:\"expiration\";i:1548162182;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36\";s:5:\"login\";i:1547989382;}}"),
+(40,1,"session_tokens","a:1:{s:64:\"2d1788a5e3b4364b5338aa2b5d050502991dd452e75dc97dbb7b4281f5b3f703\";a:4:{s:10:\"expiration\";i:1548335097;s:2:\"ip\";s:9:\"127.0.0.1\";s:2:\"ua\";s:114:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36\";s:5:\"login\";i:1548162297;}}"),
 (41,1,"meta-box-order_page","a:3:{s:6:\"normal\";s:10:\"postcustom\";s:4:\"side\";s:0:\"\";s:8:\"advanced\";s:0:\"\";}");

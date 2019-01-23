@@ -13,4 +13,8 @@ INSERT INTO `wp_terms` VALUES
 (9,"post-format-image","post-format-image",0),
 (10,"post-format-gallery","post-format-gallery",0),
 (11,"post-format-link","post-format-link",0),
-(12,"post-format-quote","post-format-quote",0);
+(12,"post-format-quote","post-format-quote",0),
+(13,"chittagong","chittagong",0),
+(14,"chittagong blog","chittagong-blog",0),
+(15,"new","new",0),
+(16,"house","house",0);
