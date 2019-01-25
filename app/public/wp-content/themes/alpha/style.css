@@ -11,7 +11,6 @@ Tags: blog, education
 Text Domain: alpha
 */
 
-
 h1.heading {
     font-family: "Arial Black";
     width: 700px;
@@ -98,7 +97,7 @@ span.page-numbers.current {
     background-position: center;
     background-size: cover;
     margin-bottom: 30px;
-    padding:170px 0px;
+    /* padding:170px 0px; */
 }
 
 .page-header h1.heading a {
@@ -155,3 +154,13 @@ span.page-numbers.current {
 .authorpage {
     margin-bottom: 30px;
 }
+
+/* testimonial section style start */
+.testi-heading {
+    padding: 50px 0;
+}
+
+.testimonials img {
+    border-radius: 50%;
+}
+/* testimonial section style end */

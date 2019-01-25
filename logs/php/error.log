@@ -373,3 +373,4 @@ Stack trace:
 #2 /app/public/index.php(17): require('/app/public/wp-...')
 #3 {main}
   thrown in /app/public/wp-content/themes/alpha/single.php on line 44
+[24-Jan-2019 17:10:18 UTC] PHP Parse error:  syntax error, unexpected '15' (T_LNUMBER), expecting ',' or ')' in /app/public/wp-content/themes/alpha/page.php on line 13
