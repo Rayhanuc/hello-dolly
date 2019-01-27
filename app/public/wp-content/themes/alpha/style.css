@@ -164,3 +164,17 @@ span.page-numbers.current {
     border-radius: 50%;
 }
 /* testimonial section style end */
+
+/* search-form start */
+.search-form {
+    padding-top: 30px;
+}
+/* search-form end */
+
+/* search-highlight start */
+.search-highlight {
+    color: red;
+    background-color: #ff0;
+    font-weight: 700;
+}
+/* search-highlight end */

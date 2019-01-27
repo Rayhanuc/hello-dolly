@@ -18,6 +18,7 @@ function alpha_bootstrapping() {
     load_theme_textdomain( "alpha" );
     add_theme_support("post-thumbnails");
     add_theme_support("title-tag");
+    add_theme_support( 'html5', array( 'search-form' ) );
 
     add_theme_support("post-formats", array("image","quote","video","audio","link","gallery") );
 
@@ -195,3 +196,16 @@ function alpha_post_class($classes){
     return $classes;
 }
 add_filter("post_class", "alpha_post_class");
+
+
+function alpha_highlight_search_results($text) {
+    if(is_search()) {
+        //  /(hello|world)/i  pattern
+        $pattern = '/('. join('|', EXPLODE(' ', GET_SEARCH_QUERY())).')/i';
+        $text = preg_replace($pattern, '<span class="search-highlight">\0</span>', $text);
+    }
+    return $text;
+}
+add_filter('the_content', 'alpha_highlight_search_results');
+add_filter('the_excerpt', 'alpha_highlight_search_results');
+add_filter('the_title', 'alpha_highlight_search_results');
