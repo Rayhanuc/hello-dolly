@@ -51,7 +51,7 @@ function alpha_bootstrapping() {
 
     add_image_size("alpha-square-two",400,400,true);
 
-    add_image_size("alpha-square-new",400,400,array("left","top"))
+    add_image_size("alpha-square-new",400,400,array("left","top"));
 }
 add_action("after_setup_theme", "alpha_bootstrapping");
 

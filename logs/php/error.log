@@ -374,3 +374,6 @@ Stack trace:
 #3 {main}
   thrown in /app/public/wp-content/themes/alpha/single.php on line 44
 [24-Jan-2019 17:10:18 UTC] PHP Parse error:  syntax error, unexpected '15' (T_LNUMBER), expecting ',' or ')' in /app/public/wp-content/themes/alpha/page.php on line 13
+[27-Jan-2019 19:18:16 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/alpha/functions.php on line 55
+[27-Jan-2019 19:18:44 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/alpha/functions.php on line 55
+[27-Jan-2019 19:18:46 UTC] PHP Parse error:  syntax error, unexpected '}' in /app/public/wp-content/themes/alpha/functions.php on line 55
