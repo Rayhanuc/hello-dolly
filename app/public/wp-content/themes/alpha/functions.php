@@ -41,7 +41,17 @@ function alpha_bootstrapping() {
 
     add_theme_support("custom-background");
     register_nav_menu("topmenu", __("Top Menu", "alpha")); 
-    register_nav_menu("footermenu", __("Footer Menu", "alpha")); 
+    register_nav_menu("footermenu", __("Footer Menu", "alpha"));
+
+    // থিমে নতুন ইমেইজ সাইজ যোগ করা
+    add_image_size("alpha-square", 400, 400,true ); // center center
+    add_image_size("alpha-potrait", 400, 9999);
+    add_image_size("alpha-landscape", 9999, 400);
+    add_image_size("alpha-landscape-hard-croped", 600, 400);
+
+    add_image_size("alpha-square-two",400,400,true);
+
+    add_image_size("alpha-square-new",400,400,array("left","top"))
 }
 add_action("after_setup_theme", "alpha_bootstrapping");
 
