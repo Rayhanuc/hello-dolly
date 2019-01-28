@@ -147,3 +147,7 @@
 [27-Jan-2019 08:17:42] NOTICE: ready to handle connections
 [27-Jan-2019 11:31:59] NOTICE: fpm is running, pid 74
 [27-Jan-2019 11:32:00] NOTICE: ready to handle connections
+[27-Jan-2019 19:28:17] NOTICE: Terminating ...
+[27-Jan-2019 19:28:17] NOTICE: exiting, bye-bye!
+[28-Jan-2019 14:35:20] NOTICE: fpm is running, pid 88
+[28-Jan-2019 14:35:20] NOTICE: ready to handle connections

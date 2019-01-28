@@ -51,7 +51,9 @@ function alpha_bootstrapping() {
 
     add_image_size("alpha-square-two",400,400,true);
 
-    add_image_size("alpha-square-new",400,400,array("left","top"));
+    add_image_size("alpha-square-new1",401,401,array("left","top"));
+    add_image_size("alpha-square-new2",500,500,array("center","center"));
+    add_image_size("alpha-square-new3",600,600,array("right","center"));
 }
 add_action("after_setup_theme", "alpha_bootstrapping");
 
@@ -219,3 +221,13 @@ function alpha_highlight_search_results($text) {
 add_filter('the_content', 'alpha_highlight_search_results');
 add_filter('the_excerpt', 'alpha_highlight_search_results');
 add_filter('the_title', 'alpha_highlight_search_results');
+
+
+// ‍stopping auto image behaviour
+function alpha_image_srcset(){
+    return null;
+}
+add_filter("wp_calculate_image_srcset", "alpha_image_srcset");
+
+// We could use this line also. both are same work
+// add_filter("wp_calculate_image_srcset", "__return_null");
