@@ -108,11 +108,11 @@ if (!is_active_sidebar("sidebar-1")) {
                                 </div>                            
                             </div>
 
-                            <?php //if(comments_open()) : ?>
+                            <?php if(comments_open()) : ?>
                                 <div class="col-md-10 offset-md-1">
-                                    <?php //comments_template();  ?>
+                                    <?php comments_template();  ?>
                                 </div>
-                            <?php //endif;?>
+                            <?php endif;?>
                         </div>
 
                     </div>
