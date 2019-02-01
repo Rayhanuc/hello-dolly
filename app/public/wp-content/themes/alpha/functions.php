@@ -66,6 +66,9 @@ function alpha_assets(){
     wp_enqueue_style("tns-style", "//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css");
     wp_enqueue_style("alpha", get_stylesheet_uri(), null, VERSION);
 
+    // This is test file enqueue
+    wp_enqueue_style("alpha-style", get_template_directory_uri()."/assets/testcss/alpha.css");
+
     wp_enqueue_script("tns-js","//cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js", null, "2.9.1", true);
     wp_enqueue_script("featherlight-js","//cdn.rawgit.com/noelboss/featherlight/1.7.13/release/featherlight.min.js", array("jquery"), "0.0.1", true);
     //new js system enqueue
@@ -133,57 +136,59 @@ function alpha_menu_item_class(){
 }
 add_filter("nav_menu_css_class", "alpha_menu_item_class", 10, 2);
 
-function alpha_about_page_template_banner(){
-    if(is_page()) {
-        $alpha_feat_image = get_the_post_thumbnail_url(null, "large");
-    ?>
-    <style>
-        /* Our style goes here */
-        .page-header {
-            background-image:url(<?php echo $alpha_feat_image; ?>)
+// চাইল্ড থিমে ওভাররাইড করার জন্য এটি দিয়ে গিরে দিতে হবে।
+if(!function_exists("alpha_about_page_template_banner")) {
+
+    function alpha_about_page_template_banner(){
+        if(is_page()) {
+            $alpha_feat_image = get_the_post_thumbnail_url(null, "large");
+        ?>
+        <style>
+            /* Our style goes here */
+            .page-header {
+                background-image:url(<?php echo $alpha_feat_image; ?>)
+            }
+        </style>
+        <?
         }
-    </style>
-    <?
-    }
 
-    if (is_front_page()){
-        if(current_theme_supports("custom-header")){
-            ?>
-                <style>
-                    .header {
-                        background-image:url(<?php echo header_image();?>);
-                        background-size: cover;
-                        background-position: center;
-                        margin-bottom:50px;
-                    }
+        if (is_front_page()){
+            if(current_theme_supports("custom-header")){
+                ?>
+                    <style>
+                        .header {
+                            background-image:url(<?php echo header_image();?>);
+                            background-size: cover;
+                            background-position: center;
+                            margin-bottom:50px;
+                        }
 
-                    .header h1.heading a, h3.tagline {
-                        color: #<?php echo get_header_textcolor();?>;
-                        <?php
-                        if (!display_header_text()){
-                            echo "display: none;";
-                        } 
+                        .header h1.heading a, h3.tagline {
+                            color: #<?php echo get_header_textcolor();?>;
+                            <?php
+                            if (!display_header_text()){
+                                echo "display: none;";
+                            } 
+                            
+                            ?>
+                        }
+
+                        h1.heading {                        
+                            <?php
+                            if (!display_header_text()){
+                                echo "border-bottom: none;";
+                            }                        
+                            ?>
+                        }
                         
-                        ?>
-                    }
-
-                    h1.heading {                        
-                        <?php
-                        if (!display_header_text()){
-                            echo "border-bottom: none;";
-                        }                        
-                        ?>
-                    }
-                    
-                </style>
-            <?php
+                    </style>
+                <?php
+            }
         }
     }
+    add_action("wp_head", "alpha_about_page_template_banner", 11);
+
 }
-
-
-add_action("wp_head", "alpha_about_page_template_banner", 11);
-
 
 // body class remove method
 function alpha_body_class($classes){
@@ -231,3 +236,11 @@ add_filter("wp_calculate_image_srcset", "alpha_image_srcset");
 
 // We could use this line also. both are same work
 // add_filter("wp_calculate_image_srcset", "__return_null");
+
+
+// এই ফাংশনটা চাইল্ড থিমে ওভার রাইড করা হয়েছে।
+if(!function_exists("alpha_todays_date")){
+    function alpha_todays_date() {
+        echo date("d/m/y");
+    }
+}
