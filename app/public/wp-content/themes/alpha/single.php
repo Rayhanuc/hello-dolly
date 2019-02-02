@@ -72,11 +72,11 @@ if (!is_active_sidebar("sidebar-1")) {
                                         
 
                                         // this is just for test of image size
-                                        the_post_thumbnail("alpha-square-new1");
+                                        /* the_post_thumbnail("alpha-square-new1");
                                         echo "<br/>";
                                         the_post_thumbnail("alpha-square-new2");
                                         echo "<br>";
-                                        the_post_thumbnail("alpha-square-new3");
+                                        the_post_thumbnail("alpha-square-new3"); */
 
 
 

@@ -397,3 +397,6 @@ Stack trace:
 [30-Jan-2019 13:09:45 UTC] PHP Parse error:  syntax error, unexpected 'tns' (T_STRING), expecting ',' or ')' in /app/public/wp-content/themes/alpha/functions.php on line 72
 [01-Feb-2019 15:29:28 UTC] PHP Parse error:  syntax error, unexpected '13' (T_LNUMBER), expecting ',' or ')' in /app/public/wp-content/themes/alpha-child/functions.php on line 14
 [01-Feb-2019 15:29:38 UTC] PHP Parse error:  syntax error, unexpected '13' (T_LNUMBER), expecting ',' or ')' in /app/public/wp-content/themes/alpha-child/functions.php on line 14
+[02-Feb-2019 05:02:51 UTC] PHP Recoverable fatal error:  Object of class WP_Comment could not be converted to string in /app/public/wp-includes/link-template.php on line 1434
+[02-Feb-2019 05:03:03 UTC] PHP Recoverable fatal error:  Object of class WP_Comment could not be converted to string in /app/public/wp-includes/link-template.php on line 1434
+[02-Feb-2019 05:03:38 UTC] PHP Recoverable fatal error:  Object of class WP_Comment could not be converted to string in /app/public/wp-includes/link-template.php on line 1434
