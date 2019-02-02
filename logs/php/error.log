@@ -400,3 +400,4 @@ Stack trace:
 [02-Feb-2019 05:02:51 UTC] PHP Recoverable fatal error:  Object of class WP_Comment could not be converted to string in /app/public/wp-includes/link-template.php on line 1434
 [02-Feb-2019 05:03:03 UTC] PHP Recoverable fatal error:  Object of class WP_Comment could not be converted to string in /app/public/wp-includes/link-template.php on line 1434
 [02-Feb-2019 05:03:38 UTC] PHP Recoverable fatal error:  Object of class WP_Comment could not be converted to string in /app/public/wp-includes/link-template.php on line 1434
+[02-Feb-2019 17:54:22 UTC] PHP Parse error:  syntax error, unexpected '=' in /app/public/wp-content/themes/alpha/comments.php on line 6
